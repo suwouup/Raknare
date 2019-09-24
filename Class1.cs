@@ -6,8 +6,8 @@ namespace räknare
     {
         static void Main(string[] args)
         {
-            Random randomerare = new Random();
-            int slump_tal = randomerare.Next(100);
+            Random siffror = new Random();
+            int suwouup_tal = siffror.Next(100);
 
             bool vinst = false;
             while (vinst == false)
@@ -15,23 +15,23 @@ namespace räknare
 
                 int tal;
 
-                Console.WriteLine("gissa ett tal mellan 1 och 100");
+                Console.WriteLine("Gissa ett tal mellan 1 och 100");
                 tal = Convert.ToInt32(Console.ReadLine());
 
 
-                if (tal == slump_tal)
+                if (tal == suwouup_tal)
                 {
                     vinst = true;
-                    Console.WriteLine("talet är rätt");
+                    Console.WriteLine("Talet är rätt");
                 }
 
-                else if (tal > slump_tal)
+                else if (tal > suwouup_tal)
                 {
-                    Console.WriteLine("talet är för högt");
+                    Console.WriteLine("Talet är för högt");
                 }
-                else if (tal < slump_tal)
+                else if (tal < suwouup_tal)
                 {
-                    Console.WriteLine("talet är för lågt");
+                    Console.WriteLine("Talet är för lågt");
                 }
             }
         }
