@@ -9,8 +9,8 @@ namespace räknare
             Random randomerare = new Random();
             int slump_tal = randomerare.Next(100);
 
-            bool Vinna = false;
-            while (Vinna == false)
+            bool vinst = false;
+            while (vinst == false)
             {
 
                 int tal;
@@ -21,8 +21,8 @@ namespace räknare
 
                 if (tal == slump_tal)
                 {
-                    Vinna = true;
-                    Console.WriteLine("talet är rätt grattis");
+                    vinst = true;
+                    Console.WriteLine("talet är rätt");
                 }
 
                 else if (tal > slump_tal)
